@@ -13,10 +13,14 @@
     "@fortawesome/react-fontawesome": "^3.3.0",
     "@reduxjs/toolkit": "^2.11.2",
     "add": "^2.0.6",
+    "bootstrap": "^5.3.8",
     "react": "^19.2.4",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.4",
+    "react-icons": "^5.6.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.13.2",
+    "styled-components": "^6.3.12",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
