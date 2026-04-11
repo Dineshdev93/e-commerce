@@ -1,0 +1,31 @@
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+footer input,
+footer textarea {
+  background-color: #212529 !important;
+  color: #fff !important;
+  border: 1px solid #495057 !important;
+}
+
+footer input::placeholder,
+footer textarea::placeholder {
+  color: #adb5bd;
+}
+
+footer button {
+  background-color: #3266bb;
+  border: none;
+}
+
+footer button:hover {
+  background-color: #0b5ed7;
+}
