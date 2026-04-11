@@ -12,7 +12,7 @@ import { FaShoppingCart, FaUserCircle } from "react-icons/fa";
 export const NavBar: React.FC = () => {
     return (
         <>
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar expand="lg" className="" style={{backgroundColor: 'rgb(28 29 38)'}}>
                 <Container fluid>
                     <Navbar.Brand href="#">
                         <img src={logo} alt="navbar logo" />
