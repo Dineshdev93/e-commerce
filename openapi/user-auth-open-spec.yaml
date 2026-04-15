@@ -1,0 +1,84 @@
+openapi: 3.0.0
+info:
+  title: E-commerce Auth API
+  version: 1.0.0
+  description: API for user authentication and registration.
+
+# The server URL can be defined here for professional documentation
+servers:
+  - url: http://localhost:4009/userauth/api
+    description: Local Development Server
+
+paths:
+  /register:
+    post:
+      summary: Register a new user
+      operationId: registerUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid input or user already exists
+
+components:
+  schemas:
+    User:
+      type: object
+      required:
+        - _id
+        - firstname
+        - lastname
+        - email
+      properties:
+        _id:
+          type: string
+          example: "69df3b4acd104a41687aa91e"
+        firstname:
+          type: string
+          example: "test"
+        lastname:
+          type: string
+          example: "sharma"
+        email:
+          type: string
+          format: email
+          example: "mantrydinesh@gmail.com"
+        userprofile:
+          type: string
+          format: uri
+          nullable: true
+        password:
+          type: string
+          description: Hashed password string
+        googleId:
+          type: string
+          nullable: true
+        displayName:
+          type: string
+          nullable: true
+        image:
+          type: string
+          nullable: true
+        tokens:
+          type: array
+          items:
+            type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        __v:
+          type: integer
+          example: 0
