@@ -5,17 +5,21 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from "@/assets/vite.svg"
+import logo from "@/assets/navlogo.jpeg"
 import { CartIconWrapper, StyledUserDropdown } from "@/layout/styles/NavFooterStyle"
 import { FaShoppingCart, FaUserCircle } from "react-icons/fa";
 
 export const NavBar: React.FC = () => {
     return (
         <>
-            <Navbar expand="lg" className="" style={{backgroundColor: 'rgb(28 29 38)'}}>
+            <Navbar expand="lg" className="" style={{ backgroundColor: 'rgb(28 29 38)' }}>
                 <Container fluid>
                     <Navbar.Brand href="#">
-                        <img src={logo} alt="navbar logo" />
+                        <img
+                            src={logo}
+                            alt="navbar logo"
+                            style={{ height: "45px", width: "auto", objectFit: "contain" }}
+                        />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
