@@ -49,3 +49,10 @@ export const CartIconWrapper = styled.div`
     right: -10px;
   }
 `
+
+
+const Logo = styled.img`
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+`;

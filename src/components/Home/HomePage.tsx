@@ -25,10 +25,10 @@ const HomePage: React.FC = () => {
               </SubText>
               
               <StyledButton>
-                <Button>
+                
 
                 Shop Now
-                </Button>
+               
                 </StyledButton>
 
               <StatsContainer>
