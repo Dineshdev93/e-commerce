@@ -38,10 +38,11 @@ export const StyledButton = styled.button`
   padding: 12px 50px;
   font-weight: 500;
   transition: transform 0.2s ease;
-
+color:white;
   &:hover {
-    background-color: #333;
+    background-color: #f0e3e3;
     transform: scale(1.05);
+    color: black;
   }
 `;
 
